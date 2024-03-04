@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>форма</title>
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+    <style>
+        .resume-form {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .resume-view {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-form" test-id="resume-builder">
+        <form action="" id="resume-form">
+            <div class="first-main-info-form">
+                <section class="first-main-section-form">
+                    <legend class="personal-info">Личные данные</legend>
+                    <ul>
+                        <li>
+                            <label for="name">ФИО</label>
+                            <input test-id="personal-info" type="text" placeholder="Василий Пупкин" id="name" name="name" required>
+                        </li>
+                        <li>
+                            <label for="date">Дата рождения</label>
+                            <input test-id="personal-info" type="text" placeholder="12.12.1212" id="date" name="date">
+                        </li>
+                        <li>
+                            <label for="city">Город</label>
+                            <input test-id="personal-info" type="text" placeholder="Москва" id="city" name="city">
+                        </li>
+                        <li>
+                            <label for="number">Номер телефона</label>
+                            <input test-id="personal-info" type="text" placeholder="+7 (234) 228-18-15" id="number" name="number">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input test-id="personal-info" type="email" placeholder="i_lybly_tink@mail.ru" id="email" name="email" >
+                        </li>
+                    </ul>
+                </section>
+                <div id="second-main-div">
+                    <div class="interest-textarea">
+                        <legend>Итересы:</legend>
+                    </div>
+                </div>
+                <button class="for-adding-interests">+</button>
+                <button class="for-removing-interests">del</button>
+                
+                
+                <div id="container-for-languages">
+                    <div class="textareas-for-languages">
+                        <legend>Языки</legend>
+                    </div>
+                </div>
+                <button class="for-adding-languages">+</button>
+                <button class="for-removing-languages">del</button>
+                
+            </div>
+            <div class="second-main-info">
+                <legend>О себе</legend>
+                <textarea id ="id-textarea-about-me" cols="15" rows="5" class="textarea-about-me" placeholder="пару слов о себе"></textarea>
+                
+                
+                <div id="container-for-experience">
+                    <div class="textareas-for-experience">
+                        <legend>Опыт работы</legend>
+                    </div>
+                </div>
+                <button class="for-adding-experience">+</button>
+                <button class="for-removing-experience">del</button>
+                
+                
+                <div id="container-for-education">
+                    <div class="textareas-for-education">
+                        <legend>Образование</legend>
+                    </div>
+                </div>
+                <button class="for-adding-education">+</button>
+                <button class="for-removing-education">del</button>
+                
+                
+                <div id="container-for-courses">
+                    <div class="textareas-for-courses">
+                        <legend>Курсы</legend>
+                    </div>
+                </div>
+                <button class="for-adding-courses">+</button>
+                <button class="for-removing-courses">del</button>
+               
+                
+                
+            </div>
+
+            <button class="forSubmit">f</button>
+        </form>
+    </div>
+
+
+    <div class="resume-view" id="resume-view">
+        <h2>резюме</h2>
+        <div class="main-info-wrapper d-flex">
+            <div class="first-main-info">
+                <img src="https://s3-alpha-sig.figma.com/img/b18d/d9b5/56ba2f8364f9c50347d27e127273fdb5?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iS6R8QFPLy7gn5Sx1HzPo~HCPQuPiZOmN3SKWHY957E8HFxaMLMkY72iugNVf~wxoOgkVOVfLeRCoy~8esy5giuAoyOzJKV2VvfKH9RQLMrXjC1jJprwtLvh-cvXyO1I4tyXpdPBJ8kVJkVUzaPa0x5xeyBlmvh~hlcwNmxLdL9fmj7F5a~-da99CFC4-mR-L4OzAQ~tJrWgh3XpKYyH6nLPttOuOVvNZ1PUgaEhBu~~tiRohbATPTQkIJgC1ZpN3xhofTukdRyv9xeIfX1lKEwr21B0UWldjss3hMYMa4LOnRQKP~6cbP763~o00Q70vOVbtHgyRB0X9UDioOV3lA__" alt="" class="profile-image">
+                <section class="first-main-section">
+                    <div class="first-main-section-data d-flex">
+                        <p class="personal-data">Личные данные</p>
+                    </div>
+                    <div class="first-main-section-information d-flex">
+                        <ul>
+                            <li>
+                                <div>
+                                    <p class="first-main-section-information-title" >ФИО</p>
+                                    <p class="first-main-section-information-inside" id="name-inside">Василий Пупкин</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p class="first-main-section-information-title">Дата рождения</p>
+                                    <p class="first-main-section-information-inside" id="date-inside">12.12.2007</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p class="first-main-section-information-title">Город</p>
+                                    <p class="first-main-section-information-inside" id="city-inside">Москва</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p class="first-main-section-information-title">Номер телефона</p>
+                                    <p class="first-main-section-information-inside" id="number-inside">89999999999</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div style="margin-bottom: 12px;">
+                                    <p class="first-main-section-information-title">Email</p>
+                                    <p class="first-main-section-information-inside" id="email-inside">vibe@mail.ru</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="second-main-section">
+                    <div class="second-main-section-interests d-flex">
+                        <p class="interests">Интересы</p>
+                    </div>
+                    <div class="second-main-section-interests-added"></div>
+                </section>
+                <section class="third-main-section">
+                    <div class="third-main-section-languages d-flex">
+                        <p class="languages">Языки</p>
+                    </div>
+                    <div class="third-main-section-languages-for-added">
+               
+                    </div>
+                </section>
+            </div>
+            <div class="second-main-info-resume">
+                <h1 id="h1">Василий Пупкин Пупкович</h1>
+                <div class="second-main-info-about-me d-flex">
+                    <p id="txt-about-me">В целом достаточно сильный разработчик, я бы даже сказал умный, вообще умен не по годам. Подниму ваш проект, удалю все легаси, и все коммиты будут маленькими по 15 строк кода.</p>
+                </div>
+                <div class="second-main-info-Experience">
+                    <div class="second-main-info-Experience-h d-flex">
+                        <p>Опыт работы</p>
+                    </div>
+                    <div class="second-main-info-Experience-job">
+
+                    </div>
+                </div>
+                <div class="second-main-info-education">
+                    <div class="second-main-info-education-h d-flex">
+                        <p>Образование и квалификация</p>
+                    </div>
+                    <div class="second-main-info-education-higher">
+                        
+                    </div>
+                </div>
+                <div class="second-main-info-courses">
+                    <div class="second-main-info-courses-h d-flex">
+                        <p>Курсы</p>
+                    </div>
+                    <div class="second-main-info-courses-types">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

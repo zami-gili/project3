@@ -1,0 +1,433 @@
+.body {
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.main-info-wrapper {
+    width: 900px;
+    height: 853.88px;
+    margin: auto;
+}
+
+.first-main-info {
+    width: 256px;
+    height: 853.88px;
+    
+    background-color: #6495ED;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 28px;
+    border-radius: 180px;
+}
+
+.first-main-section {
+    width: 224px;
+    height: 296px;
+    margin-left: 16px;
+    margin-top: 0;
+}
+
+.first-main-section-data {
+    width: 224px;
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+.first-main-section-data p {
+    font-size: 15.9px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.first-main-section-information{
+    padding: 0 0 0 0;
+    width: 224px;
+    height: 213px;
+    margin-top: 20px;
+}
+.first-main-section-information ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.first-main-section-information div{
+    width: 224px;
+    height: 33px;
+    margin-left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.first-main-section-information-title {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    color: white;
+    margin-block-end: 0;
+}
+
+.first-main-section-information-inside {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    margin-block-start: 0;
+    color: white;
+}
+
+.second-main-section {
+    width: 224px;
+    height: 179px;
+    margin-left: 16px;
+}
+
+.second-main-section-interests {
+    width: 224px;
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+.second-main-section-interests p {
+    font-size: 15.9px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+    
+.second-main-section-interests-added {
+    width: 224px;
+    height: 108px;
+    margin-top: 20px;
+    gap: 10.68px;
+
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
+.third-main-section {
+    width: 224px;
+    height: 125px;
+    margin-left: 16px;
+}
+
+.third-main-section-languages {
+    width: 224px;
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+.third-main-section-languages p {
+    font-size: 15.9px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.third-main-section-languages-for-added {
+    width: 224px;
+    height: 54px;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.third-main-section-languages-added {
+    width: 223.14px;
+    height: 17px;
+    justify-content: space-between;
+}
+.language-type {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;    
+}
+.language-level {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: white;    
+}
+
+.second-main-info-resume {
+    width: 644px;
+    height: 853.88px;
+    background-color: #F8F8F8;
+}
+
+h1 {
+    margin-top: 26.7px;
+    margin-bottom: 27,3px;
+    margin-left: 16px;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.second-main-info-about-me {
+    width: 612px;
+    height: 57.38px;
+    margin-left: 16px;
+    border-top: 1px solid #D3D3D3;
+}
+
+.second-main-info-about-me p {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.second-main-info-Experience {
+    width: 612px;
+    height: 258.75px;
+    margin-left: 16px;
+}
+
+.second-main-info-Experience-h {
+    height: 50px; 
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.second-main-info-Experience-h p{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.second-main-info-Experience-job {
+    width: 612px;
+    height: 175.75px;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.second-main-info-job-added {
+    width: 612px;
+    height: 74.38px;
+}
+
+.statement-mark-job {
+    width: 602.8px;
+    height: 17px;
+    margin-top: -0.66px;
+    justify-content: space-between;
+}
+
+.statement-mark-job-name {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.statement-mark-job-date {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: right ;
+}
+
+.place-of-work {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-block-start: 0;
+}
+
+.talk-about-work {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.second-main-info-education {
+    width: 612px;
+    height: 243.75px;
+    margin-left: 16px;
+}
+
+.second-main-info-education-h {
+    height: 50px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.second-main-info-education-h p{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.second-main-info-education-higher {
+    width: 612px;
+    height: 160.75px;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.second-main-info-education-added {
+    width: 612px;
+    height: 74.38px;    
+}
+
+.statement-mark-education {
+    width: 602.8px;
+    height: 17px;
+    margin-top: -0.66px;
+    justify-content: space-between;
+}
+
+.statement-mark-education-name {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.statement-mark-education-date {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: right;    
+}
+
+.place-of-styding {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;    
+    margin-block-start: 0;
+}
+
+.talk-about-styding {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.second-main-info-courses {
+    width: 612px;
+    height: 206px;
+    margin-left: 16px;
+}
+
+.second-main-info-courses-h {
+    height: 50px;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.second-main-info-courses-h p {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.second-main-info-courses-types {
+    width: 612px;
+    height: 816.88px;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.second-main-info-courses-added {
+    width: 612px;
+    height: 33px;
+    gap: 1.34px;
+}
+
+.statement-mark-corses {
+    width: 603.83px;
+    height: 17px;
+    justify-content: space-between;
+}
+
+.statement-mark-courses-name {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+
+.statement-mark-courses-date {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: right;    
+}
+
+.place-of-courses {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;    
+    margin-block-start: 0;
+}
+
