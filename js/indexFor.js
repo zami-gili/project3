@@ -300,8 +300,19 @@ function showResume(event) {
 
 
     form.style.display = 'none';
-    view.style.display = 'block';
+    view.style.display = 'block'; 
+
+    function returnForm(event) { 
+        event.preventDefault
+        form.style.display = 'block';
+        view.style.display = 'none';
+    }
+    
+    const buttonForReturn = document.getElementById("for-return");
+    buttonForReturn.addEventListener("click", returnForm);
 }
+
+
 
 const buttonForSubmit = document.querySelector('.forSubmit');
 
@@ -368,7 +379,7 @@ function addInterest(event) {
     event.preventDefault();
     const newInterest = document.createElement("div");
     newInterest.className = "interest-textarea";
-    newInterest.innerHTML = `<textarea style="flex-wrap: wrap;" class="adding-interests" name="nameInterests" rows="1" style="width: 50px;"></textarea>`;
+    newInterest.innerHTML = `<textarea style="flex-wrap: wrap;" test-id="interest" class="adding-interests" name="nameInterests" rows="1" style="width: 50px;"></textarea>`;
     secondMainDiv.appendChild(newInterest);
 };
 function removeInterest(event) {
@@ -391,7 +402,7 @@ function addLanguage(event) {
     event.preventDefault();
     const newLanguage = document.createElement("div");
     newLanguage.className = "textareas-for-languages";
-    newLanguage.innerHTML = `<textarea style="flex-wrap: wrap;" name="nameLanguages" rows="1" style="width: 50px;"></textarea> <input name="nameLevel" type="text" placeholder="уровень" style="width: 35px">`;
+    newLanguage.innerHTML = `<textarea test-id="language-name" style="flex-wrap: wrap;" name="nameLanguages" rows="1" style="width: 50px;"></textarea> <input test-id="language-level" name="nameLevel" type="text" placeholder="уровень" style="width: 35px">`;
     containerForLanguages.appendChild(newLanguage);
 }
 function removeLanguage(event) {
@@ -413,11 +424,11 @@ function addExperience(event) {
     event.preventDefault();
     const newExperience = document.createElement("div");
     newExperience.className = "textareas-for-experience";
-    newExperience.innerHTML = `<textarea style="flex-wrap: wrap;" name="nameJobTitle" placeholder="Должность" rows="1" style="width: 50px;"></textarea> 
-    <input type="date" name="nameStartOfWorking">
-    <input type="date" name="nameEndOfWorking">
-    <textarea name="namePlaceOfWork" placeholder="место работы" cols="15" rows="5"></textarea>
-    <textarea name="nameOccupation" placeholder="чем занимались будучи на этой должности" cols="20" rows="7"></textarea>`;
+    newExperience.innerHTML = `<textarea test-id="job-title" style="flex-wrap: wrap;" name="nameJobTitle" placeholder="Должность" rows="1" style="width: 50px;"></textarea> 
+    <input type="date" test-id="job-date-start" name="nameStartOfWorking">
+    <input type="date" test-id="job-date-end" name="nameEndOfWorking">
+    <textarea name="namePlaceOfWork" test-id="job-place" placeholder="место работы" cols="15" rows="5"></textarea>
+    <textarea name="nameOccupation" test-id="job-description" placeholder="чем занимались будучи на этой должности" cols="20" rows="7"></textarea>`;
     containerForExperience.appendChild(newExperience);
 }
 function removeExperience(event) {
@@ -439,11 +450,11 @@ function addEducation(event) {
     event.preventDefault();
     const newEducation = document.createElement("div");
     newEducation.className = "textareas-for-education";
-    newEducation.innerHTML = `<textarea style="flex-wrap: wrap;" name="nameHighEducation" placeholder="вид высшего образования" rows="1" style="width: 50px;"></textarea> 
-    <input type="date" name="nameStartOfStyding">
-    <input type="date" name="nameEndOfStyding">
-    <textarea name="namePlaceOfStyding" placeholder="место учебы" cols="15" rows="5"></textarea>
-    <textarea name="nameAdditionalInformation" placeholder="дополнительная информация" cols="20" rows="7"></textarea>`;
+    newEducation.innerHTML = `<textarea test-id="education-title" style="flex-wrap: wrap;" name="nameHighEducation" placeholder="вид высшего образования" rows="1" style="width: 50px;"></textarea> 
+    <input type="date" test-id="education-date-start" name="nameStartOfStyding">
+    <input type="date" test-id="education-date-end" name="nameEndOfStyding">
+    <textarea test-id="education-place" name="namePlaceOfStyding" placeholder="место учебы" cols="15" rows="5"></textarea>
+    <textarea test-id="education-description" name="nameAdditionalInformation" placeholder="дополнительная информация" cols="20" rows="7"></textarea>`;
     containerForEducation.appendChild(newEducation);
 }
 function removeEducation(event) {
@@ -465,10 +476,10 @@ function addCourses(event) {
     event.preventDefault();
     const newCourses = document.createElement("div");
     newCourses.className = "textareas-for-courses";
-    newCourses.innerHTML = `<textarea style="flex-wrap: wrap;" name="nameOfCourse" placeholder="название курса" rows="1" style="width: 50px;"></textarea> 
-    <input type="date" name="nameStartOfCourse">
-    <input type="date" name="nameEndOfCourse">
-    <textarea name="nameOfCompany" placeholder="название организации" cols="15" rows="5"></textarea>`;
+    newCourses.innerHTML = `<textarea test-id="course-title" style="flex-wrap: wrap;" name="nameOfCourse" placeholder="название курса" rows="1" style="width: 50px;"></textarea> 
+    <input type="date" test-id="course-date-start" name="nameStartOfCourse">
+    <input type="date" test-id="course-date-end" name="nameEndOfCourse">
+    <textarea test-id="course-place" name="nameOfCompany" placeholder="название организации" cols="15" rows="5"></textarea>`;
     containerForCourses.appendChild(newCourses);
 }
 function removeCourses(event) {
